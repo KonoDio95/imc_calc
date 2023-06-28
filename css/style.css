@@ -1,0 +1,153 @@
+/*Importação da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue');
+
+/* Define as variaveis globais */
+:root{
+    /*
+    _f: padrão;
+    _h: hover;
+    */
+    --bkg_page: #ffdead;
+    --bkg_main: #84ade3;
+    --bkg_header: #ff5353;
+    --bkg_footer: #ff6868;
+    /* --bkg_btn_f_h: #d8d8d8; */
+    --bkg_btn_f: #98bbff;
+    --bkg_btn_f_h: #c5d9ff;
+    --border_f: #6d6d6d;
+}
+
+/* Resetar as configurações do navegador */
+*{
+    outline: 0;
+}
+
+/* Estilização da tag "body" */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bkg_page);
+    font-family: 'Comic Neue', monospace;
+}
+
+/* Estilização da tag "header" e demais */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bkg_header);
+}
+header > h1 {
+    width: 100%;
+    text-align: center;
+    color: #fff675;
+}
+#logo{
+    margin: 0 1em;
+}
+#logo img{
+    height: 5em;
+}
+
+/*Estilização da tag "footer"*/
+footer {
+    position: relative;
+    margin-top: 1em;
+    bottom: 100%;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em;
+    background-color: var(--bkg_footer);
+}
+
+/* Estilização da tag "main" */
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--bkg_main);
+}
+
+/* Estilização de outros containers */
+.cont_1{
+    width: 45%;
+}
+
+/* Estilização do form e demais */
+#form_calc {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#form_calc > label {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#form_calc > input {
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    border: 1px solid var(--border_f);
+}
+.btns_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#form_calc button {
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 0.5em;
+    background-color: var(--bkg_btn_f);
+    border: 1px solid var(--border_f);
+    width: 45%;
+}
+#form_calc button:hover {
+    background-color: var(--bkg_btn_f_h);
+    border: 1px solid var(--border_btn_f_h);
+    cursor: pointer;
+}
+
+/* Estilização do resultado */
+#result {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Estilização da margem de risco */
+#risk {
+    display: block;
+    width: 2em;
+    height: 2em;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* Estilização da tabela */
+#tabela{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+#tabela img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilização de outros containers */
+    .cont_1{
+        min-width: 100%;
+    }
+}

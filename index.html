@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Sou eu de novo HAHAHA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculando IMC</title>
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <figure id="logo">
+            <img src="images/logo.png" alt="Sem Logo :(" title="Logo">
+        </figure>
+    
+        <h1>CALCULANDO O IMC</h1>
+    </header>
+    <main>
+        <section id="c_form" class="cont_1">
+            <form id="form_calc">
+                <label for="peso">Peso (em kg)</label>
+                <input type="number" id="peso" name="peso" step="0.01" min="0">
+
+                <label for="altura">Altura (em cm)</label>
+                <input type="number" id="altura" name="altura" min="0">
+
+                <div class="btns_form">
+                    <button type="submit">Calcular</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+
+            <p id="result"></p>
+            <span id="risk"></span>
+        </section>
+
+        <aside class="cont_1">
+            <figure id="tabela">
+                <img src="images/tabela_imc.png" alt="A tabela IMC deveria estar aqui :(" title="Tabela IMC">
+            </figure>
+        </aside>
+    </main>
+
+    <footer>
+        <p>
+            Feito por Carlos Alexandre e Jhonatan Gobeti
+        </p>
+    </footer>
+</body>
+</html>
