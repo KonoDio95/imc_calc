@@ -7,7 +7,7 @@ function calc(event) {
     let peso = parseFloat(document.getElementById("peso").value);
     let altura_u = parseFloat(document.getElementById("altura").value) / 100;
 
-    let imc = (peso / altura_u ** 2).toFixed(2);
+    let imc = (peso / altura_u ** 2).toFixed(1);
     if (isNaN(imc) || imc == null) {
         result.innerHTML = `<strong>Insira informações válidas</strong>`;
     }
